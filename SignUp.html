@@ -10,7 +10,7 @@
 
 <body>
     <header>
-        <img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo">
+        <a href="Index.html"><img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo"></a> 
         <nav>
             <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
             <h3>Menu</h3>
@@ -114,7 +114,8 @@
                     </tr>
                     <tr>
                         <!-- Nona Linha-->
-                        <td><input type="tel" id="tel" name="tel" placeholder="(xxxx)-xx-(xxx)-xxxxx"></td>
+                        <!-- <td><input pattern="^\d{4}-\d{3}-\d{4}$" type="tel"></td> -->
+                        <td><input type="tel" id="tel" name="tel" placeholder="(0000)-00-(000)-00000" data-mask="(0000)-00-(000)-00000"></td> 
                         <td>
                             <input type="radio" id="female" name="sex" value="female"> Female
                             <input type="radio" id="male" name="sex" value="male"> Male
