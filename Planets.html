@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets</title>
+</head>
+
+<body>
+    <img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo">
+    <nav>
+        <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
+        <h3>Menu</h3>
+        <ul>
+            <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
+            <li><a href="Index.html">Home</a></li>
+            <li>
+                <!-- <a href="">Sign In</a> --> Sign In
+            </li>
+            <li><a href="SignUp.html">Sign Up</a></li>
+            <li><a href="Planets.html">Planets</a></li>
+            <li>
+                <!-- <a href="">Experiences</a> -->Experiences
+            </li>
+            <li>
+                <!-- <a href="">Era</a> --> Era
+            </li>
+            <li>
+                <!-- <a href="">About Us</a> --> About Us
+            </li>
+            <li>
+                <!-- <a href="">Our Crew</a> --> Our Crew
+            </li>
+            <li>
+                <!-- <a href="">Careers</a> --> Careers
+            </li>
+            <li>
+                <!-- <a href="">Contact</a> --> Contact
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <p>
+        <h3>On this vast universe <br>
+            many worlds to see. <br>
+            On this page, choose the planet <br>
+            your journey will begin.</h3>
+        </p>
+    </section>
+
+    <h1>JOURNEY DESTINATION</h1>
+
+    <form id="destiny">
+        <!--Aqui a intenção é selecionar a galaxy e então aparecer os planetas correspondetes à tal galaxia "if", mas como ainda não aprendi, coloquei assim só pra visualização do que quero fazer-->
+        <fieldset>
+            <table>
+                <tr>
+                    <td><label for="galaxy">Galaxy:</label></td>
+                    <td><label for="planets">Planet:</label></td>
+                    <td><label for="tripdate">Travel Date:</label></td>
+                </tr>
+
+                <tr>
+                    <td><select name="galaxy" id="galaxy">
+                            <option> Choose the galaxy</option>
+                            <option value="4X"> 4-X-Alpha </option>
+                            <option value="AR"> Artoro </option>
+                            <option value="MW"> Milky Way </option>
+                            <option value="SK"> Silrk </option>
+                        </select></td>
+
+                    <td><select name="planet" id="planet">
+                            <option> Choose the planet</option>
+                            <option value="MR"> Mercury </option>
+                            <option value="VN"> Venus </option>
+                            <option value="TR"> Earth </option>
+                            <option value="MT"> Mars </option>
+                            <option value="JP"> Jupiter </option>
+                            <option value="ST"> Saturn </option>
+                            <option value="UR"> Uranus</option>
+                            <option value="NT"> Neptune</option>
+                        </select></td>
+                    <td><input type="date" id="tripdate" name="tripdate"></td>
+
+                    <!-- Intenção de que quando pressionar o "more filters" as opções irão aparecer em seu lugar sem carregar toda a página novamente e mais a frente aparecerá "less filters"-->
+                    <td> <a href="">More filters</a></td>
+                </tr>
+            </table>
+            <!--Aqui quero fazer que quando selecionado o planeta, apareça opções de atrações em tal planeta, como lugares para ir, experiências a viver, etc.-->
+        </fieldset>
+    </form>
+
+    <section>        
+        <table>
+            <h2>Most Popular</h2>
+            <td><a href=""><img src="earth.png" alt="Earth"></a></td>
+            <td><a href=""><img src="arkanis-minor.png" alt="Arkanis Minor"></a></td>
+            <td><a href=""><img src="s14.png" alt="S14"></a></td>
+            <td><a href=""><img src="cynopk.png" alt="Cynopk"></a></td>
+            <td><a href=""><img src="bandraginus5.png" alt="Bandraginus 5"></a></td>
+        </table>
+    </section>
+
+    <br>
+    <br>
+    <p> <a href="#logo"><img src="voltar.png"></a>
+    <footer>
+        <nav>
+            <table>
+                <tr>
+                    <th>&copy; 2052 BeyondAir Spaceline, Inc. ·</th> 
+                    <td>Privacy ·</td>  <!-- Idealmente, cada um desses itens será um link para suas perspectivas descrições-->
+                    <td>Terms ·</td>
+                    <td>Company Informations</td>
+
+                </tr>               
+        </nav>
+    </footer>
+
+</body>
+
+</html>
