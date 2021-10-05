@@ -6,56 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planets</title>
+    <link rel="stylesheet" type="text/css" href="gerStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="Index.html"><img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo"></a>
-        <nav>
-            <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
-            <h3>Menu</h3>
-            <ul>
-                <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
-                <li><a href="Index.html">Home</a></li>
-                <li>
-                    <!-- <a href="">Sign In</a> --> Sign In
-                </li>
-                <li><a href="SignUp.html">Sign Up</a></li>
-                <li><a href="Planets.html">Planets</a></li>
-                <li>
-                    <!-- <a href="">Experiences</a> -->Experiences
-                </li>
-                <li>
-                    <!-- <a href="">Era</a> --> Era
-                </li>
-                <li>
-                    <!-- <a href="">About Us</a> --> About Us
-                </li>
-                <li>
-                    <!-- <a href="">Our Ships</a> --> Our Ships
-                </li>
-                <li>
-                    <!-- <a href="">Our Crew</a> --> Our Crew
-                </li>
-                <li>
-                    <!-- <a href="">Careers</a> --> Careers
-                </li>
-                <li>
-                    <!-- <a href="">Contact</a> --> Contact
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <p>
-        <h3>On this vast universe <br>
+    <nav class="navtop">  
+        <div class="menuDropdown">
+            <a href="#ulMenu" class="menudrop" id="menuIcon"><img src="menuTad.png" alt=""></a>
+                
+                <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
+                <div class="dropContent" id="ulMenu">  
+                        <h3>Menu</h3> 
+                    <ul>
+                            <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
+                            <li class="grid-item"><a href="index.html">Home</a></li>
+                            <li class="grid-item"> <!-- <a href="">Sign In</a> --> Sign In</li>
+                            <li class="grid-item"><a href="SignUp.html">Sign Up</a></li>
+                            <li class="grid-item"><a href="Planets.html">Planets</a></li>
+                            <li class="grid-item"> <!-- <a href="">Experiences</a> -->Experiences</li>
+                            <li class="grid-item"> <!-- <a href="">Era</a> --> Era</li>
+                            <li class="grid-item"> <!-- <a href="">About Us</a> --> About Us</li>
+                            <li class="grid-item"> <!-- <a href="">Our Ships</a> --> Our Ships</li>
+                            <li class="grid-item"> <!-- <a href="">Our Crew</a> --> Our Crew</li>
+                            <li class="grid-item"> <!-- <a href="">Careers</a> --> Careers</li>
+                            <li class="grid-item"> <!-- <a href="">Contact</a> --> Contact</li>
+                    </ul>
+                </div> 
+            </div>            
+        <a href="index.html" class="h1nav"><h1>BeyondAir Spaceline</h1></a>
+        <a href="SignUp.html" class="user"><img src="userSignIn.png" alt=""></a>
+    </nav>
+    <section id="pagtop">
+        <p>On this vast universe, <br>
             many worlds to see. <br>
             On this page, choose the planet <br>
-            your journey will begin.</h3>
+            your journey will begin.
         </p>
     </section>
 
-    <h1>JOURNEY DESTINATION</h1>
+    <h1 id="h1journey">JOURNEY DESTINATION</h1>
 
     <form id="destiny">
         <!--Aqui a intenção é selecionar a galaxy e então aparecer os planetas correspondetes à tal galaxia "if", mas como ainda não aprendi, coloquei assim só pra visualização do que quero fazer-->
@@ -96,31 +88,25 @@
             <!--Aqui quero fazer que quando selecionado o planeta, apareça opções de atrações em tal planeta, como lugares para ir, experiências a viver, etc.-->
         </fieldset>
     </form>
-
-    <section>
-        <table>
-            <h2>Most Popular</h2>
-            <td><a href=""><img src="earth.png" alt="Earth"></a></td>
-            <td><a href=""><img src="arkanis-minor.png" alt="Arkanis Minor"></a></td>
-            <td><a href=""><img src="s14.png" alt="S14"></a></td>
-            <td><a href=""><img src="cynopk.png" alt="Cynopk"></a></td>
-            <td><a href=""><img src="bandraginus5.png" alt="Bandraginus 5"></a></td>
-        </table>
+    <h2>Most Popular</h2>
+    <section class="flexcont">            
+            <a href="" class="popIten"><img src="earth.png" alt="Earth"></a>
+            <a href="" class="popIten"><img src="arkanis-minor.png" alt="Arkanis Minor"></a>
+            <a href="" class="popIten"><img src="s14.png" alt="S14"></a>
+            <a href="" class="popIten"><img src="cynopk.png" alt="Cynopk"></a>
+            <a href="" class="popIten"><img src="bandraginus5.png" alt="Bandraginus 5"></a>
     </section>
 
     <br>
     <br>
-    <p> <a href="#logo"><img src="Up.png" alt="Go back to the top of the page"></a>
+    <a href="#pagtop" id="uptop"><img src="Up.png" alt="Go back to the top of the page"></a> <!-- Botão para voltar para o topo da página -->
     <footer>
-        <nav>
-            <table>
-                <tr>
-                    <th>&copy; 2052 BeyondAir Spaceline, Inc. ·</th>
-                    <td>Privacy ·</td>
-                    <!-- Idealmente, cada um desses itens será um link para suas perspectivas descrições-->
-                    <td>Terms ·</td>
-                    <td>Company Informations</td>
-                </tr>
+        <nav class="navbot">
+            <div class="navbotIten"><b>&copy; 2152 BeyondAir Spaceline, Inc. </b></div>
+            <div class="navbotIten">Privacy </div>
+            <div class="navbotIten">Terms </div>
+            <div class="navbotIten">Company Informations</div>
+            <div class="navbotIten" id="imgfoot"><img src="logo-even-less.png" alt="BeyondAir Spaceline logo"></div>   
         </nav>
     </footer>
 

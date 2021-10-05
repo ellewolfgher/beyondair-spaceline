@@ -1,197 +1,239 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeyondAir Homepage</title>
+    <title>BeyondAir - Homepage</title>
+    <link rel="stylesheet" type="text/css" href="homepageStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Turret+Road&display=swap');
+    </style> -->
 </head>
 
 <body>
-    <header>
-        <!--Logo BeyondAir Spaceline-->
-        <a href="Index.html"><img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo"></a>
-        <h1>To Infinity & Beyond</h1>
-        <h4><em>This time for real</em></h4>
-
-        <!--Button que desce a página direto para o campo de pesquisa-->
-        <button><a href="#pesquisa">BOOK YOUR FLIGHT</a> </button>
-
-        <nav>
+    <nav class="navtop">  
+        <div class="menuDropdown">
+            <a href="#ulMenu" class="menudrop" id="menuIcon"><img src="menuTad.png" alt=""></a>
+            
             <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
-            <h3>Menu</h3>
-            <ul>
-                <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
-                <li><a href="Index.html">Home</a></li>
-                <li>
-                    <!-- <a href="">Sign In</a> --> Sign In
-                </li>
-                <li><a href="SignUp.html">Sign Up</a></li>
-                <li><a href="Planets.html">Planets</a></li>
-                <li>
-                    <!-- <a href="">Experiences</a> -->Experiences
-                </li>
-                <li>
-                    <!-- <a href="">Era</a> --> Era
-                </li>
-                <li>
-                    <!-- <a href="">About Us</a> --> About Us
-                </li>
-                <li>
-                    <!-- <a href="">Our Ships</a> --> Our Ships
-                </li>
-                <li>
-                    <!-- <a href="">Our Crew</a> --> Our Crew
-                </li>
-                <li>
-                    <!-- <a href="">Careers</a> --> Careers
-                </li>
-                <li>
-                    <!-- <a href="">Contact</a> --> Contact
-                </li>
-            </ul>
-        </nav>
+                <div class="dropContent" id="ulMenu">  
+                     <h3>Menu</h3> 
+                    <ul>
+                        <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
+                        <li class="grid-item"><a href="index.html">Home</a></li>
+                        <li class="grid-item"> <!-- <a href="">Sign In</a> --> Sign In</li>
+                        <li class="grid-item"><a href="SignUp.html">Sign Up</a></li>
+                        <li class="grid-item"><a href="Planets.html">Planets</a></li>
+                        <li class="grid-item"> <!-- <a href="">Experiences</a> -->Experiences</li>
+                        <li class="grid-item"> <!-- <a href="">Era</a> --> Era</li>
+                        <li class="grid-item"> <!-- <a href="">About Us</a> --> About Us</li>
+                        <li class="grid-item"> <!-- <a href="">Our Ships</a> --> Our Ships</li>
+                        <li class="grid-item"> <!-- <a href="">Our Crew</a> --> Our Crew</li>
+                        <li class="grid-item"> <!-- <a href="">Careers</a> --> Careers</li>
+                        <li class="grid-item"> <!-- <a href="">Contact</a> --> Contact</li>
+                    </ul>
+                </div> 
+            </div>            
+        <a href="index.html" class="h1nav"><h1>BeyondAir Spaceline</h1></a>
+        <a href="SignUp.html" class="user"><img src="userSignIn.png" alt=""></a>
+        
+            <!-- <div class="loginDropdown">
+            <a href="SignUp.html" class="user"><img src="userSignIn.png" alt=""></a> 
+            <div class="logindrop">
+                <form>
+                    <table>
+                        <tr>                           
+                            <td><label for="email">Email:</label></td>
+                            <td><input type="email" id="email" name="email" placeholder="Enter your email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="senha">Password:</label></td>
+                            <td><input type="password" id="password" name="password" placeholder="Enter your password"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" id="rememberuser" name="rememberuser"></td>
+                            <td><label for="rememberuser">Remember</label></td>
+                        </tr>
+                        <button type="submit">Login</button>
+                        <p><a href="">Need help signing in?</a></p>
+                        <p>Don't have an account? <a href="SignUp.html">Sign Up</a></p>
+                </form>
+            </div>
+        </div> -->
+    </nav>
+    <header id="pagtop">
+        <img src="logo-less.png" alt="Logo" id="logo">
+        <!-- <img src="textoHome.png" alt="To Infinity and Beyond" id="hometext"> -->
+        <h1 class="hometext" id="infbey">To Infinity & Beyond</h1>
+        <h3 class="hometext" id="timereal">This time for real</h3>
+        <a href="#pesquisa" id="bookit"><button>BOOK YOUR FLIGHT</button></a>        
     </header>
+    
+    <div class="contDesc">
+        <p id="description">
+            <b><i>BeyondAir</i></b>, the number one spaceline in the whole universe. <br>
+            We can take you anywhere and anytime across the galaxies. <br>
+            You can experience the most memorable and iconic moments through history. <br>
+            Just get on board and enjoy the ride!
+        </p>
+    </div>
     <form>
         <p>
             <!--Aqui quero criar um campo de pesquisa que irá auto completar com as opções disponíveis-->
-            <input type="text" id="pesquisa" placeholder="Where do you want to go? ">
-            <button type="submit"><img src="search.png" alt=""></button>
-        </p>
-    </form>
-    <p>
-        <b><i>BeyondAir</i></b>, the number one spaceline in the whole universe. <br>
-        We can take you anywhere and anytime across the galaxies. <br>
-        You can experience the most memorable and iconic moments through history. <br>
-        Just get on board and enjoy the ride!
-    </p>
-    <section>
+            <input type="text" id="pesquisa" placeholder="Where do you want to go?">
+            <button type="submit" id="searchButton"><img src="search.png" alt=""></button>
+        </p>      
+    </form> 
+    
+    <section class="categorias">
         <p>
-            <a href="Planets.html"><img src="planets.png" alt="Planets">
+            <a href="Planets.html" class="categoryIten" id="planets">
+                <picture>
+                    <source media="(max-width:780px)" srcset="planets-tad.png">
+                    <img src="planets.png" alt="Planets">
+                </picture>
                 <!--Planets-->
             </a>
-            <a href=""><img src="experiences.png" alt="Experiences">
+            <a href="" class="categoryIten" id="experiences">
+                <picture>
+                    <source media="(max-width:780px)" srcset="experiences-tad.png">
+                    <img src="experiences.png" alt="Experiences">
+                </picture>
                 <!--Experiences-->
             </a>
-            <a href=""><img src="era.png" alt="Era">
+            <a href="" class="categoryIten" id="era">
+                <picture>
+                    <source media="(max-width:780px)" srcset="era-tad.png">
+                    <img src="era.png" alt="Era">
+                </picture>
                 <!--Era-->
             </a>
         </p>
     </section>
-
-    <section>
-        <h2>Most Popular</h2>
-        <!--Nessa tabela de Most Popular, a intenção é colocar um rolamento para o lado, estilo filmes no Netflix. No qual provavelmente não usarei a tabela dessa forma, mas para melhor visualização, deixarei assim para essa apresentação apenas-->
-        <table border="1">
+    <h2>Most Popular</h2>
+    <section class="flexcont">
+        <table class="popIten">
             <tr>
-                <!--Imagem-->
-                <!--Queen-->
                 <td><a href=""><img src="queen-at-wambley.png" alt="Cover live concert Queen at Wambley"
-                            title="Cover live concert Queen at Wambley"></a></td>
-                <!--Eywa-->
+                    title="Cover live concert Queen at Wambley"></a></td>
+            </tr>
+            <tr>
+                <td class="titlename"><a href="">Queen at Wambley</a></td>
+            </tr>
+            <tr>
+                <td class="place">On Earth, 1986</td>
+            </tr>
+            <tr>
+                <td class="descr">Watch Queen at Wambley
+                    in 1986 live from the front 
+                    row, one of the most iconic 
+                    concerts on Earth.</td>
+            </tr>
+        </table>
+        <table class="popIten">
+            <tr>
                 <td><a href=""><img src="eywa.png" alt="Picture of two Na'vis passing through Eywa tree"
-                            title="Picture of two Na'vis passing through Eywa tree"></a></td>
-                <!--Escape-->
+                    title="Picture of two Na'vis passing through Eywa tree"></a></td>
+            </tr>
+            <tr>
+                <td class="titlename"><a href="">Connect with Eywa</a></td>
+            </tr>
+            <tr>
+                <td class="place">On Pandora</td>
+            </tr>
+            <tr>
+                <td class="descr">Live the experience of being connected with millions through Eywa tree.</td>
+            </tr>
+        </table>
+        <table class="popIten">
+            <tr>
                 <td><a href=""><img src="escape-reality.png" alt="Fictional image to represent the game Escape Reality"
-                            title="Fictional image to represent the game"></a></td>
-                <!--Party-->
+                    title="Fictional image to represent the game"></a></td>
+            </tr>
+            <tr>
+                <td class="titlename"><a href="">Play Escape Reality</a></td>
+            </tr>
+            <tr>
+                <td class="place">On Dreamlet</td>
+            </tr>
+            <tr>
+                <td class="descr">Gather your crew and play one of the most dangerous and exciting games in the universe.</td>
+            </tr>
+        </table>
+        <table class="popIten">
+            <tr>
                 <td><a href=""><img src="partyay.png" alt="Picture of last Lollagalactic Festival in 4178"
-                            title="Picture of last Lollagalactic Festival in 4178"></a></td>
-                <!--Adipose-->
+                    title="Picture of last Lollagalactic Festival in 4178"></a></td>
+            </tr>
+            <tr>
+                <td class="titlename"><a href="">Lollagalactic Festival Party</a></td>
+            </tr>
+            <tr>
+                <td class="place">On Raxacoricofallapatorius</td>
+            </tr>
+            <tr>
+                <td class="descr">Join the biggest party in the universe with attractions out of this world.</td>
+            </tr>
+        </table>
+        <table class="popIten">
+            <tr>
                 <td><a href=""><img src="adipose.png" alt="Picture of Adipose 56r3 smiling"
-                            title="Picture of Adipose 56r3"></a></td>
-                <!--Spacedive-->
-                <td><a href=""><img src="skultrox.png" alt="Picture of Skultrox jumping from the ship"
-                            title="Picture of Skultrox jumping from the ship"></a></td>
+                    title="Picture of Adipose 56r3"></a></td>
             </tr>
             <tr>
-                <!--Título Experiência-->
-                <!--Queen-->
-                <td><a href="">Queen at Wambley</a></td>
-                <!--Eywa-->
-                <td><a href="">Connect with Eywa</a></td>
-                <!--Escape-->
-                <td><a href="">Play Escape Reality</a></td>
-                <!--Party-->
-                <td><a href="">Lollagalactic Festival Party</a></td>
-                <!--Adipose-->
-                <td><a href="">Lose weight and play with Adiposes</a></td>
-                <!--Spacedive-->
-                <td><a href="">Spacedive with Skultrox through Gallian's bubbles</a></td>
+                <td class="titlename"><a href="">Lose weight and play with Adiposes</a></td>
             </tr>
             <tr>
-                <!--Planeta no qual está localizado-->
-                <!--Queen-->
-                <td><strong><em>Earth, 1986</em></strong></td>
-                <!--Eywa-->
-                <td><strong><em>On Pandora</em></strong></td>
-                <!--Escape-->
-                <td><strong><em>On Dreamlet</em></strong></td>
-                <!--Party-->
-                <td><strong><em>On Raxacoricofallapatorius</em></strong></td>
-                <!--Adipose-->
-                <td><strong><em>On Adipoxso 3</em></strong></td>
-                <!--Spacedive-->
-                <td><strong><em>On Gallian</em></strong></td>
+                <td class="place">On Adipoxso 3</td>
             </tr>
             <tr>
-                <!--Breve descrição sobre a experiência-->
-                <!--Queen-->
-                <td>Watch Queen at Wambley in 1986 live from the front row, one of the most iconic concerts on Earth.
-                </td>
-                <!--Eywa-->
-                <td>Live the experience of being connected with millions through Eywa tree.</td>
-                <!--Escape-->
-                <td>Gather your crew and play one of the most dangerous and exciting games in the universe. </td>
-                <!--Party-->
-                <td>Join the biggest party in the universe with attractions out of this world.</td>
-                <!--Adipose-->
-                <td>Feeling heavy? On Adipoxso 3 you can lose fat turning them in an adorable Adipose and play with them
+                <td class="descr">Feeling heavy? On Adipoxso 3 you can lose fat turning them in an adorable Adipose and play with them
                     while you are there.</td>
-                <!--Spacedive-->
-                <td>Feeling adventurous? Join the adrenaline chasers, the Skultrox, in a free fall from the outer space
+            </tr>
+        </table>
+        <table class="popIten">
+            <tr>
+                <td><a href=""><img src="skultrox.png" alt="Picture of Skultrox jumping from the ship"
+                    title="Picture of Skultrox jumping from the ship"></a></td>
+            </tr>
+            <tr>
+                <td class="titlename"><a href="">Spacedive through Gallian's bubbles</a></td>
+            </tr>
+            <tr>
+                <td class="place">On Gallian</td>
+            </tr>
+            <tr>
+                <td class="descr">Feeling daring? Join the high chasers, the Skultrox, in a free fall from the outer space
                     of Gallian onto the colorful bubbles of high.</td>
             </tr>
         </table>
-
-        <!-- Essa tabela está em comentário, como lembrete para tentar fazer uma tabela para cada item e ser colocado lado a lado quando for usar css-->
-        <!-- <table border=1>
-            <tr>
-                <td><img src="queen-at-wambley.png"></td>
-            </tr>
-            <tr>
-                <td>Queen at Wambley</td>
-            </tr>
-            <tr>
-                <td><b>On Earth, 1986</b></td>
-            </tr>
-            <tr>
-                <td>Watch Queen at Wambley <br>
-                    in 1986 live from the front <br>
-                    row, one of the most iconic <br>
-                    concerts on Earth.</td>
-            </tr>
-        </table> -->
-
     </section>
-    <br>
-    <br>
-    <br>
-    <p> <a href="#logo"><img src="Up.png" alt="Go back to the top of the page"></a>
+    <a href="#pagtop" id="uptop"><img src="Up.png" alt="Go back to the top of the page"></a> <!-- Botão para voltar para o topo da página -->
     <footer>
-        <nav>
-            <table>
+        <nav class="navbot">
+            <div class="navbotIten"><b>&copy; 2152 BeyondAir Spaceline, Inc. </b></div>
+            <div class="navbotIten">Privacy </div>
+            <div class="navbotIten">Terms </div>
+            <div class="navbotIten">Company Informations</div>
+            <div class="navbotIten" id="imgfoot"><img src="logo-even-less.png" alt="BeyondAir Spaceline logo"></div> 
+            <!-- <table>
                 <tr>
-                    <th>&copy; 2052 BeyondAir Spaceline, Inc. ·</th>
+                    <th>&copy; 2152 BeyondAir Spaceline, Inc. ·</th>
                     <td>Privacy ·</td>
-                    <!-- Idealmente, cada um desses itens será um link para suas perspectivas descrições-->
+                    Idealmente, cada um desses itens será um link para suas perspectivas descrições
                     <td>Terms ·</td>
                     <td>Company Informations</td>
+                    <td id="logofooter"><img src="logo-even-less.png" alt="BeyondAir Spaceline logo"></td>
                 </tr>
+            </table> -->
+                
         </nav>
     </footer>
-
 </body>
 
 </html>

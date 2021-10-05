@@ -6,47 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="signupStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Turret+Road&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <a href="Index.html"><img src="logo-less.png" alt="Logo BeyondAir Spaceline" id="logo"></a> 
-        <nav>
-            <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
-            <h3>Menu</h3>
-            <ul>
-                <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
-                <li><a href="Index.html">Home</a></li>
-                <li>
-                    <!-- <a href="">Sign In</a> --> Sign In
-                </li>
-                <li><a href="SignUp.html">Sign Up</a></li>
-                <li><a href="Planets.html">Planets</a></li>
-                <li>
-                    <!-- <a href="">Experiences</a> -->Experiences
-                </li>
-                <li>
-                    <!-- <a href="">Era</a> --> Era
-                </li>
-                <li>
-                    <!-- <a href="">About Us</a> --> About Us
-                </li>
-                <li>
-                    <!-- <a href="">Our Ships</a> --> Our Ships
-                </li>
-                <li>
-                    <!-- <a href="">Our Crew</a> --> Our Crew
-                </li>
-                <li>
-                    <!-- <a href="">Careers</a> --> Careers
-                </li>
-                <li>
-                    <!-- <a href="">Contact</a> --> Contact
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <section>
+    <nav class="navtop">  
+        <div class="menuDropdown">
+            <a href="#ulMenu" class="menudrop" id="menuIcon"><img src="menuTad.png" alt=""></a>
+                
+                <!--Aqui quero fazer um menu de navegação que só irá aparecer quando eu clicar nos 3 pontinhos que ficará no canto superior da página, mas até aprender isso, vai cru mesmo-->
+                <div class="dropContent" id="ulMenu">  
+                        <h3>Menu</h3> 
+                    <ul>
+                            <!-- Links dentro de comentário, para ficar mais fácil a visualização para avaliação das 3 páginas disponíveis-->
+                            <li class="grid-item"><a href="index.html">Home</a></li>
+                            <li class="grid-item"> <!-- <a href="">Sign In</a> --> Sign In</li>
+                            <li class="grid-item"><a href="SignUp.html">Sign Up</a></li>
+                            <li class="grid-item"><a href="Planets.html">Planets</a></li>
+                            <li class="grid-item"> <!-- <a href="">Experiences</a> -->Experiences</li>
+                            <li class="grid-item"> <!-- <a href="">Era</a> --> Era</li>
+                            <li class="grid-item"> <!-- <a href="">About Us</a> --> About Us</li>
+                            <li class="grid-item"> <!-- <a href="">Our Ships</a> --> Our Ships</li>
+                            <li class="grid-item"> <!-- <a href="">Our Crew</a> --> Our Crew</li>
+                            <li class="grid-item"> <!-- <a href="">Careers</a> --> Careers</li>
+                            <li class="grid-item"> <!-- <a href="">Contact</a> --> Contact</li>
+                    </ul>
+                </div> 
+            </div>            
+        <a href="index.html" class="h1nav"><h1>BeyondAir Spaceline</h1></a>
+        <a href="SignUp.html" class="user"><img src="userSignIn.png" alt=""></a>
+    </nav>
+    
+    <section id="pagtop">
         <form>
             <fieldset>
                 <legend>SING UP AND GET ON BOARD</legend> <br>
@@ -54,24 +48,24 @@
                 <table>
                     <tr>
                         <!-- Primeira linha -->
-                        <td><label for="nickname" id="nickname" name="nickname">Nickname:</label></td>
-                        <td><label for="fullname" id="fullname" name="fullname">Full name:</label></td>
+                        <td><label class="leftcol" for="nickname" id="nickname" name="nickname">Nickname:</label></td>
+                        <td><label class="rightcol" for="fullname" id="fullname" name="fullname">Full name:</label></td>
                     </tr>
                     <tr>
                         <!-- Segunda linha -->
-                        <td><input type="text" placeholder="Type in your nickname"></td>
-                        <td><input type="text" placeholder="Type in your full name" </td>
+                        <td><input class="leftcol" type="text" placeholder="Type in your nickname"></td>
+                        <td><input class="rightcol" type="text" placeholder="Type in your full name"></td>
                     </tr>
 
                     <tr>
                         <!-- Terceira linha -->
-                        <td><label for="birthdate" id="birthdate" name="birthdate">Date of birth:</label></td>
-                        <td><label for="species">Species:</label></td>
+                        <td><label class="leftcol" for="birthdate" id="birthdate" name="birthdate">Date of birth:</label></td>
+                        <td><label class="rightcol" for="species">Species:</label></td>
                     </tr>
                     <tr>
                         <!-- Quarta Linha-->
-                        <td><input type="date"></td>
-                        <td><select name="species" id="species">
+                        <td><input class="leftcol" type="date"></td>
+                        <td><select class="rightcol"  name="species" id="species">
                                 <option>Select your species</option>
                                 <option value="NT"> Abzorbaloff</option>
                                 <option value="TR"> Arcturan </option>
@@ -88,48 +82,47 @@
                     </tr>
                     <tr>
                         <!-- Quinta Linha-->
-                        <td><label for="email">Email:</label></td>
-                        <td><label for="emailcheck">Confirm your email:</label></td>
+                        <td><label class="leftcol" for="email">Email:</label></td>
+                        <td><label class="rightcol" for="emailcheck">Confirm your email:</label></td>
                     </tr>
                     <tr>
                         <!-- Sexta Linha-->
-                        <td><input type="email" id="email" name="email" placeholder="Enter an email"></td>
-                        <td><input type="email" id="emailcheck" name="emailcheck" placeholder="Type the email again">
+                        <td><input class="leftcol" type="email" id="email" name="email" placeholder="Enter an email"></td>
+                        <td><input class="rightcol" type="email" id="emailcheck" name="emailcheck" placeholder="Type the email again">
                         </td>
                     </tr>
                     <tr>
                         <!-- Sétima Linha-->
-                        <td><label for="password">Password:</label></td>
-                        <td><label for="passwordcheck">Confirm password:</label></td>
+                        <td><label class="leftcol" for="password">Password:</label></td>
+                        <td><label class="rightcol" for="passwordcheck">Confirm password:</label></td>
                     </tr>
                     <tr>
                         <!-- Oitava Linha-->
-                        <td><input type="password" id="password" name="password" placeholder="Enter a password"></td>
-                        <td><input type="password" id="passwordcheck" name="passwordcheck"
+                        <td><input class="leftcol" type="password" id="password" name="password" placeholder="Enter a password"></td>
+                        <td><input class="rightcol" type="password" id="passwordcheck" name="passwordcheck"
                                 placeholder="Type the password again"></td>
                     </tr>
                     <tr>
-                        <td><label for="tel">Contact Code:</label></td>
-                        <td><label for="sex">Sex/Gender:</label></td>
+                        <td><label class="leftcol" for="tel">Contact Code:</label></td>
+                        <td><label class="rightcol" for="sex">Sex/Gender:</label></td>
                     </tr>
                     <tr>
                         <!-- Nona Linha-->
                         <!-- <td><input pattern="^\d{4}-\d{3}-\d{4}$" type="tel"></td> -->
-                        <td><input type="tel" id="tel" name="tel" placeholder="(xxxx)-xx-(xxx)-xxxxx" data-mask="(0000)-00-(000)-00000"></td> 
+                        <td><input class="leftcol" type="tel" id="tel" name="tel" placeholder="(xxxx)-xx-(xxx)-xxxxx" data-mask="(0000)-00-(000)-00000"></td> 
                         <td>
-                            <input type="radio" id="female" name="sex" value="female"> Female
+                            <input class="rightcol"  type="radio" id="female" name="sex" value="female"> Female
                             <input type="radio" id="male" name="sex" value="male"> Male
                             <input type="radio" id="ale" name="sex" value="ale"> Ale
                             <input type="radio" id="other" name="sex" value="other"> Other
                         </td>
                     </tr>
                 </table>
-                <p>
+                <p class="checkform">
                     <!-- Essa caixa de texto Hobbies foi criada para demonstração de uso do textarea, mas futuramente ela não estará nessa página, mas sim em "contato"-->
-                    <label for="hobbies">Hobbies</label> <br>
-                    <textarea id="hobbies" rows="5" cols="33" placeholder="Tell us a bit about the things you like to do, so we can recommend you the best options."></textarea>
-                    <br>
-                    <br>
+                    <!-- <label for="hobbies">Hobbies</label> <br>
+                    <textarea id="hobbies" rows="5" cols="33" placeholder="Tell us a bit about the things you like to do, so we can recommend you the best options."></textarea> -->
+                    
                     <input type="checkbox"> I want to register for free in BeyondAir Spaceline and I agree with the <a
                         href="">Terms and Conditions of use.</a>
                     <br>
@@ -137,32 +130,30 @@
                     <input type="checkbox"> I want to sign up to receive newsletters and special offers through my
                     email.
                 </p>
+                <p class="buttonsform">
+                    <button class="buttform" type="reset">Reset</button>
+                    <button class="buttform" type="submit">Register</button>
+                    <!-- Não coloquei: <input type="submit"> pois não sei como modificar a escrita "Enviar"-->
+                </p>
             </fieldset>
-            <p>
-                <button type="reset">Reset</button>
-                <button type="submit">Register</button>
-                <!-- Não coloquei: <input type="submit"> pois não sei como modificar a escrita "Enviar"-->
-            </p>
+            
         </form>
 
-        <figure>
+        <div id="grootimg">
             <img src="baby-groot-guardians-of-the-galaxy.gif" alt="Baby Groot welcoming you abord">
-            <figcaption>Baby Groot welcoming you aboard!</figcaption>
-        </figure>
+        </div>    
 
     </section>
     <br>
-    <p> <a href="#logo"><img src="Up.png" alt="Go back to the top of the page"></a> <!-- Botão para voltar para o topo da página -->
+    
+    <a href="#pagtop" id="uptop"><img src="Up.png" alt="Go back to the top of the page"></a> <!-- Botão para voltar para o topo da página -->
     <footer>
-        <nav>
-            <table>
-                <tr>
-                    <th>&copy; 2052 BeyondAir Spaceline, Inc. ·</th>
-                    <td>Privacy ·</td>
-                    <!-- Idealmente, cada um desses itens será um link para suas perspectivas descrições-->
-                    <td>Terms ·</td>
-                    <td>Company Informations</td>
-                </tr>
+        <nav class="navbot">
+            <div class="navbotIten"><b>&copy; 2152 BeyondAir Spaceline, Inc. </b></div>
+            <div class="navbotIten">Privacy </div>
+            <div class="navbotIten">Terms </div>
+            <div class="navbotIten">Company Informations</div>
+            <div class="navbotIten" id="imgfoot"><img src="logo-even-less.png" alt="BeyondAir Spaceline logo"></div>   
         </nav>
     </footer>
 </body>

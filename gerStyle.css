@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Turret Road', cursive;
+    background-image: url(background.jpg);
+    background-size: cover;
+    color: #FFFFFF;
+}
+/************************************************ Barra fixa de navegação ***********************************************/
+.navtop{
+    background-image: url(navbar2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    width: 100%;
+    height: 80px;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+    margin: 0;
+}
+#menuIcon{
+    margin-left: 20px;
+}
+.h1nav{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.user{
+    /* position: relative; */
+    margin-right: 20px;
+    margin-top: 0px;
+}
+/******************************************* Dropdown do menu com o uso de hover *******************************************************/
+                    /*Menu dropdown*/
+.menuDropdown{
+    /* position: relative; */
+    display: inline-block;
+}
+                    /*Conteúdo hidden by default*/
+.dropContent{
+    display: none;
+    position: absolute;
+    background-image: url(menubg.png);
+    background-size: cover;
+    min-width: 160px;
+    z-index: 1;
+    margin-left: 30px;
+    border-radius: 30px;
+    padding: 20px;
+    color: #1C0036;
+    font-weight: bold;
+}
+                    /*Customização dos links nas li*/
+.dropContent li a{
+    color: #1C0036;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+                    /*Mudança de cor da fonte com hover*/
+.dropContent li a:hover{
+    color: #FFFFFF;
+}
+                    /*li*/
+.dropContent li{
+    padding-bottom: 3px;
+    list-style: none;
+}
+.dropContent h3{
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+                    /*Mostra o dropdown do menu através do hover*/
+.menuDropdown:hover .dropContent{
+    display: block;
+}
+#pagtop{
+    padding-top: 130px;            /* Espaço para aparecer a nav fixa em cima */
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 580;
+}
+#h1journey{
+    text-align: center;
+    margin-bottom: 10px;
+}
+#destiny{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center
+}
+#destiny a{
+    text-decoration: none;
+    color: rgb(45, 255, 255);
+    padding-left: 10px;
+}
+#destiny input[type=date], select{
+    border-radius: 20px;
+    padding: 3px 7px 3px;
+    text-align: center;
+}
+h2{
+    text-align: center;
+    margin: 40px 0 25px;
+}
+.flexcont{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    margin: 10px 100px 10px;
+}
+/********************** Seta para ir para o topo da página *******************/
+#uptop{
+    display: flex;
+    flex-wrap: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+/***************** Footer *****************/
+.navbot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-image: url(navbar2.png);
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+@media (max-width: 780px){
+    #destiny{
+        font-size: 15px;
+        width: 600px;
+    }
+    .navbot{
+        margin: 0 0 0;
+        font-size: 10px;
+    }
+}
